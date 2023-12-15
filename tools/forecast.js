@@ -19,7 +19,11 @@ const forecast = (longitude, latitude, callback) => {
           " is " +
           response.body.current.condition.text +
           " and it's temperature is " +
-          response.body.current.temp_c
+          response.body.current.temp_c +
+          " At the longitude of " +
+          longitude +
+          " At the latitude of  " +
+          latitude
       );
     }
   });
